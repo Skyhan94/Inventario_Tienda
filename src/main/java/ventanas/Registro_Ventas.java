@@ -714,10 +714,11 @@ public class Registro_Ventas extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelCodigo_Pedidos)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabelCodigo_Pedidos)
+                                .addComponent(jLabel11)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextFieldCodigo_Pedidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -786,11 +787,10 @@ public class Registro_Ventas extends javax.swing.JFrame {
 
     private void Estadisticas_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Estadisticas_buttonActionPerformed
         // TODO add your handling code here:
+        LimpiarTabla();
         ListarVentas();
         GananciaTotal();
-        jTabbedPane1.setSelectedIndex(2);
-        
-        
+        jTabbedPane1.setSelectedIndex(2);        
     }//GEN-LAST:event_Estadisticas_buttonActionPerformed
 
     private void Realizar_Venta_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Realizar_Venta_buttonActionPerformed
